@@ -29,7 +29,8 @@ header{
 .hamburger-btn span{
     position: relative;
     top: 50%;
-    left: 15px;
+    float: right;
+    margin-right: 20px;
     display: block;
     width: 30px;
     height: 3px;
@@ -76,9 +77,11 @@ header{
     transform: rotate(45deg);
     top: 0;
 }
-/* 前回はここまで */
 
-/* 今回はここから */
+.hamburger-btn span:hover {
+    color: #FF0000;
+}
+
 /***********************
 * ハンバーガーメニュー部分
 ***********************/
@@ -86,7 +89,7 @@ header{
 .menu-sp {
     position: fixed;
     top: 0;
-    left: -250px;
+    right: -250px;
     width: 250px;
     height: 100vh;
     z-index: 50;
@@ -96,7 +99,7 @@ header{
     padding-left: 15px;
 }
 .add-menu-sp {
-    left: 0;
+    right: 0;
 }
 /* モーダル */
 .modal-sp {
